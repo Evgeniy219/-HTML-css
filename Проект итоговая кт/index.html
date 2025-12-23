@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCraft Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <style>*{transition:background-color 0.5s ease,color 0.5s ease,border-color 0.5s ease,box-shadow 0.5s ease}.theme-ball{transition:transform 0.5s cubic-bezier(0.68,-0.55,0.265,1.55)}</style>
+</head>
+<body data-theme="light">
+    <!-- Переключатель темы -->
+    <div class="theme-switch">
+        <input type="checkbox" id="theme-toggle" class="theme-toggle">
+        <label for="theme-toggle" class="theme-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="theme-ball"></span>
+        </label>
+    </div>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>WebCraft</span>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Главная</a></li>
+                        <li><a href="#about" class="nav-link">О нас</a></li>
+                        <li><a href="#services" class="nav-link">Услуги</a></li>
+                        <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                        <li><a href="#contact" class="nav-link">Контакты</a></li>
+                    </ul>
+                    
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-up">Создаем современные сайты, которые продают</h1>
+                <p class="hero-subtitle animate-fade-up-delay">Разработка, дизайн и продвижение веб-сайтов для бизнеса любого масштаба</p>
+                <div class="hero-buttons animate-fade-up-delay-2">
+                    <a href="#portfolio" class="btn btn-primary pulse">Посмотреть работы</a>
+                    <a href="#contact" class="btn btn-secondary">Обсудить проект</a>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-text">Выполненных проектов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-text">Довольных клиентов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-text">Лет опыта</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Декор -->
+        <div class="hero-shape"></div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <p class="section-subtitle">Мы создаем не просто сайты, а инструменты для роста вашего бизнеса</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="feature-title">Скорость</h3>
+                    <p class="feature-text">Оптимизированные сайты, которые загружаются менее чем за 2 секунды</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Адаптивность</h3>
+                    <p class="feature-text">Идеальное отображение на всех устройствах: от смартфонов до десктопов</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="feature-title">SEO-оптимизация</h3>
+                    <p class="feature-text">Повышаем видимость вашего сайта в поисковых системах</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">Поддержка 24/7</h3>
+                    <p class="feature-text">Всегда на связи для решения любых вопросов и технической поддержки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <p class="section-subtitle">Полный цикл разработки веб-проектов</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">Веб-дизайн</h3>
+                    <p class="service-text">Создание уникального дизайна, который отражает философию вашего бренда</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> UI/UX дизайн</li>
+                        <li><i class="fas fa-check"></i> Прототипирование</li>
+                        <li><i class="fas fa-check"></i> Адаптивный дизайн</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Верстка и разработка</h3>
+                    <p class="service-text">Чистый код, современные технологии и внимание к деталям</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> HTML5, CSS3, JavaScript</li>
+                        <li><i class="fas fa-check"></i> React, Vue.js</li>
+                        <li><i class="fas fa-check"></i> Адаптивная верстка</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="service-title">Интернет-магазины</h3>
+                    <p class="service-text">Разработка полнофункциональных онлайн-магазинов с системами оплаты</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> WooCommerce, Shopify</li>
+                        <li><i class="fas fa-check"></i> Интеграция платежей</li>
+                        <li><i class="fas fa-check"></i> Управление товарами</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Продвижение</h3>
+                    <p class="service-text">Увеличение видимости сайта и привлечение целевой аудитории</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> SEO-оптимизация</li>
+                        <li><i class="fas fa-check"></i> Контекстная реклама</li>
+                        <li><i class="fas fa-check"></i> Аналитика и отчеты</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Наши работы</h2>
+            <p class="section-subtitle">Реализованные проекты, которыми мы гордимся</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Интернет-магазин</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">E-commerce платформа</h3>
+                        <p class="portfolio-text">Разработка онлайн-магазина с каталогом из 500+ товаров</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Корпоративный сайт</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Корпоративный портал</h3>
+                        <p class="portfolio-text">Многостраничный сайт для крупной производственной компании</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Лендинг</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Промо-лендинг</h3>
+                        <p class="portfolio-text">Одностраничный сайт для запуска нового продукта на рынок</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item big-item">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Мобильное приложение</div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Мобильное приложение</h3>
+                        <p class="portfolio-text">Кроссплатформенное приложение для управления проектами</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <p class="section-subtitle">Обсудим ваш проект и предложим лучшее решение</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Адрес</h3>
+                            <p>г. Санкт-Петербург, ул. Профессора Попова, д. 52</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Телефон</h3>
+                            <p>8 (888) 888-88-88</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>info@webcraft-studio.ru</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Режим работы</h3>
+                            <p>Пн-Пт: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="service" name="service">
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option value="design">Веб-дизайн</option>
+                                <option value="development">Разработка</option>
+                                <option value="ecommerce">Интернет-магазин</option>
+                                <option value="seo">Продвижение</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Опишите ваш проект"></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <label for="agree">Согласен на обработку персональных данных</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <i class="fas fa-code"></i>
+                        <span>WebCraft</span>
+                    </div>
+                    <p class="footer-text">Создаем современные сайты, которые работают на результат.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Веб-дизайн</a></li>
+                        <li><a href="#">Разработка сайтов</a></li>
+                        <li><a href="#">Интернет-магазины</a></li>
+                        <li><a href="#">SEO-продвижение</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Подпишитесь на рассылку</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p class="footer-text">Будьте в курсе наших новостей и акций</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> WebCraft Studio. Все права защищены.</p>
+                <p>By Лахтионов Евгений</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка Наверх -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
